@@ -61,6 +61,12 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  var resultado = '';
+  for (var i = 0; i < palabras.length; i++) {
+    resultado = resultado + palabras[i] + ' ';
+  }{
+    return resultado.slice(0, -1);
+  }
 }
 
 
@@ -68,6 +74,14 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for (i=0; i<=array.length-1; i++) {
+    if (array[i] === elemento) {
+      return true;
+    }
+  }
+  {
+    return false;
+  }
 }
 
 
@@ -75,6 +89,12 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+    var suma = 0;
+  for (i = 0; i < numeros.length; i++) {
+    suma += numeros[i];
+  }{
+  return suma;
+}
 }
 
 
@@ -82,6 +102,13 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+    let suma = 0;
+  for (i = 0; i < resultadosTest.length; i++) {
+    let score = resultadosTest[i];
+    suma += score;
+  }{
+  return suma / resultadosTest.length;
+}
 }
 
 
@@ -89,6 +116,14 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  var max = numeros[0];
+  for (var i = 0; i < numeros.length; i++) {
+    if (numeros[i] > max) {
+      max = numeros[i];
+    }
+  }{
+  return max;
+}
 }
 
 
